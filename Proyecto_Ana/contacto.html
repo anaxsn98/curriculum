@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<nav class="logo">
+			<a href="index.html"><img src="img/logo.png" alt=""></a>
+		</nav>
+		
+		<nav class="menu">
+			<ul>
+				<li>
+					<div class="menuIcono"><a href="quienesSomos.html"><img class="icono" src="iconos/personas.png" alt=""></a></div>
+					quienes somos
+				</li>
+				<li>
+					<div class="menuIcono"><a href="instalaciones.html"><img class="icono" src="iconos/edificio.png" alt=""></a></div>
+					instalaciones
+				</li>
+				<li>
+					<div class="menuIcono"><a href="servicios.html"><img class="icono" src="iconos/red.png" alt=""></a></div>
+					servicios
+				</li>
+				<li>
+					<div class="menuIcono"><a href="productos.html"><img class="icono" src="iconos/carrito.png" alt=""></a></div>
+					productos
+				</li>
+				<li>
+					<div class="menuIcono"><a href="contacto.html"><img class="icono" src="iconos/agenda.png" alt=""></a></div>
+					contacto
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<nav class="contacto_cuerpo">
+		<h2>Contacto</h2>
+		<div class="contacto">
+			<div>
+			<p><img src="iconos/icono_casa.png" alt="">Universidad Europea de Madrid. Campus Villaviciosa de Odón. Calle Tajo S/N Villaviciosa de Odón.</p>
+			<p><img src="iconos/icono_mail.png" alt="">inovtech.solutions@gmail.com</p>
+			<p><img src="iconos/icono_telefono.png" alt="">91 211 56 73</p>
+			</div>
+			<img src="img/mapa.png" alt="">
+		</div>
+		
+		<h2>¡Ponte en contacto con nosotros!</h2>
+		<form action="mailto:raul.rodriguez@universidadeuropea.es" method="GET" name="DAM">
+			
+			<label for="nombre" name="nombre">Nombre:</label>
+		    <input type="text" name="nombre" required minlength="3" maxlength="40">
+
+		    <label for="apellido" name="apellido">Apellido:</label>
+		    <input type="text" name="apellido" required minlength="3" maxlength="40">
+
+		    <br>
+		    <br>
+		    
+
+			<label for="ciudad" name="ciudad">Ciudad:</label>
+		    <input type="text" name="ciudad" required minlength="3" maxlength="40">
+
+		    <label for="población" name="población">Población:</label>
+		    <input type="text" name="población" required minlength="3" maxlength="40">
+
+		    <br>
+		    <br>
+		    
+
+			<label for="codigo_postal" name="codigo_postal">Código postal:</label>
+		    <input type="text" name="codigo_postal" required minlength="3" maxlength="40">		    
+		    <label for="calle" name="calle">Calle:</label>
+		    <input type="text" name="calle" required minlength="3" maxlength="40">
+
+		    <label for="portal" name="portal">Portal:</label>
+		    <input type="text" name="portal" required minlength="3" maxlength="40">
+
+		    <br>
+		    <br>
+		    
+
+		   <label for="numero" name="numero">Número:</label>
+		    <input type="text" name="numero"  minlength="3" maxlength="40">		    
+		    <label for="piso" name="piso">Piso:</label>
+		    <input type="text" name="piso"  minlength="3" maxlength="40">
+
+		    <label for="puerta" name="puerta">Puerta:</label>
+		    <input type="text" name="puerta"  minlength="3" maxlength="40">
+
+		    <br>
+		    <br>
+		    
+
+		     <label for="email">Email</label>
+		     <input type="email" name="email" placeholder="Escribe aquí tu email" required>
+
+		    <label for="telefono" name="telefono">Teléfono:</label>
+		    <input type="text" name="telefono" required minlength="3" maxlength="40">
+			
+			<br>
+		    <br>
+
+		    <label for="asunto" name="asunto">Asunto:</label>
+		    <br>
+ 			<input type="checkbox" checked>
+ 			<label for="consultoria" name="consultoria">Consultoría</label>
+
+ 			<input type="checkbox" >
+ 			<label for="desarrollo_de_Proyectos" name="desarrollo_de_Proyectos">Desarrollo de Proyectos</label>
+
+			<input type="checkbox" >
+ 			<label for="Realizacion_de_Pedidos" name="Realizacion_de_Pedidos">Realización de Pedidos</label>
+
+ 			<input type="checkbox" >
+ 			<label for="otros" name="otros">Otros</label>
+
+ 			<br>
+ 			<br>
+
+ 			<textarea name="comentarios" cols="70" rows="7" placeholder="Escriba aquí su comentario"></textarea>
+
+			<br>
+ 		
+ 			<button type="submit">Enviar</button>
+		    <button type="reset">Borrar</button>
+		    <input type="file" name="archivo">
+		    <br>
+		</form>
+	</nav>
+
+
+	<footer>
+		
+		<div class="redesSociales_instalaciones">
+			<img src="iconos/logo_instagram.png" alt="">
+			<img src="iconos/logo_facebook.png" alt="">
+			<img src="iconos/logo_linkedin.png" alt="">
+		</div>
+		
+	</footer>
+</body>
+</html>

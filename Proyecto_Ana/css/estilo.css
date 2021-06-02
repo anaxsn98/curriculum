@@ -1,0 +1,518 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #1F304C;
+}
+
+header{
+	background-color: #fff;
+	width: 100%;
+	height: 92px;
+	position: fixed;
+	margin: 10px 0 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: capitalize;
+}
+header nav{
+	display: block;
+	width: 100%;
+	align-items: center;
+}
+.logo{
+	width: 20%;
+	margin-left: 100px;
+}
+
+header img{
+	width: 130px;
+	height: 92px;
+}
+
+.menu{
+	background-color: #fff;
+	width:100%;
+	height: 40px;
+	overflow:hidden;
+	opacity:0.2;
+	transition-duration:0.6s;
+}
+.menu:hover{
+	opacity:1;
+}
+.menu ul{
+	margin:0px;
+}
+.menu li{
+	float:left;
+	width: 18%;
+	text-align: center;
+	color: #1F304C;
+	list-style: none;
+	margin-top:-30px;
+	transition-duration: 0.6s;
+}
+.menu li:hover{
+	margin-top:15px;
+
+}
+.icono{
+	width: 30px;
+	height: 30px;
+}
+.menuIcono{
+	width: 100%;
+	height: 25px;
+	float:left;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	cursor:pointer;
+	position:relative;
+	top:-15px;
+}
+
+.index_cuerpo{
+	padding-top: 122px;
+	background-image: url("../img/capaPortada.png"),url("../img/portada.png");
+	height: calc(100vh - 80px);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.index_cuerpo h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 30pt;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+
+.index_cuerpo h2{
+
+	padding-top: 100px;
+	font-size: 40px;
+}
+
+.index_cuerpo h3{
+	width: 722px;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.quienesSomos_cuerpo{
+	padding-top: 250px;
+	background-color: #1F304C;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.presentacion{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 40px 0 100px ;
+}
+
+.quienesSomos_cuerpo h1{
+	text-align: center;
+	padding-bottom: 100px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 30pt;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+.quote{
+	line-height: 350px;
+	font-size: 28px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.presentacion_descripcion{
+	width: 750px;
+
+}
+
+.presentacion_descripcion h2{
+	font-size: 40px;
+}
+
+.presentacion_descripcion h3{
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.presentacion_imagen img{
+	width: 461px;
+	height: 290px;
+}
+
+.descripcion{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 40px 0 100px;
+}
+
+.descripcion img{
+	width: 608px;
+	height: 485px;
+}
+
+.descripcion h3{
+	font-size: 35px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.descripcion p{
+	font-size: 25px;
+	font-weight: 300;
+}
+
+.empleados{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 40px 0 100px;
+}
+
+.empleados div{
+	border:1px solid #E39510;
+	padding: 10px 10px; 
+}
+
+.empleados div img{
+	width: 300px;
+	height: 300px;
+}
+
+.empleados div h4{
+	font-weight: 400;
+	font-size: 20px;
+}
+.empleados div p{
+	font-weight: 300;
+	font-size: 10px;
+}
+
+footer{
+	color: #fff;
+	background-color: #1F304C;
+}
+
+footer h1{
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 30pt;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0 40px 30px 100px;
+}
+
+footer img{
+	width: 30px;
+	height: 30px;
+}
+
+footer nav{
+	margin: 0 40px 0 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacto p{
+	margin-bottom: 30px;
+}
+
+.contacto img{
+	margin-right: 30px;
+}
+.redesSociales{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.redesSociales img{
+	margin-bottom: 30px;
+}
+
+.instalaciones_cuerpo{
+	padding-top: 150px;
+	margin: 0 40px 0 100px;
+}
+
+.instalaciones_cuerpo h2{
+	font-size: 40px;
+	font-weight: 300;
+	text-transform: capitalize;
+	border-bottom: 1px solid #E39510;
+	width: 650px;
+	margin-bottom: 20px;
+}
+
+.instalaciones_cuerpo div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 90px 0px;
+}
+
+.instalaciones_cuerpo hr{
+	border-top: 1px solid #E39510;
+	width: 55%;
+	margin: auto !important;
+}
+
+.ubicacion{
+	width: 17px;
+	height: 20px;
+}
+
+.instalaciones_cuerpo p{
+	margin:0  70px;
+	width: 500px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.redesSociales_instalaciones{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90px;
+}
+
+.redesSociales_instalaciones img{
+	margin: 10px 90px;
+}
+
+.servicios_cuerpo{
+	padding-top: 150px;
+	margin: 0 40px 0 100px;
+}
+
+.servicios_cuerpo h2{
+	font-size: 40px;
+	font-weight: 300;
+	text-transform: capitalize;
+	border-bottom: 1px solid #E39510;
+	width: 650px;
+	margin-bottom: 20px;
+}
+
+.tipos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 700px;
+}
+
+.tipos div{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tipos div img{
+	
+}
+
+.tipos div h3{
+	font-size: 35px;
+	font-weight: 400;
+	margin: 30px 30px;
+}
+
+.tipos div hr{
+	border-top: 1px solid #E39510;
+	width: 45%;
+	margin: auto !important;
+}
+
+.tipos div p{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.maletin{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.maletin img{
+	margin-right: 50px;
+}
+.maletin h3{
+	font-size: 35px;
+	font-weight: 400;
+	margin: 0px 30px;
+}
+
+.maletin h4{
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0px 30px;
+}
+
+table {
+	height: 600px;
+	margin: auto;
+}
+table th{
+	width: 100px;
+	padding: 0 90px;
+}
+
+.contacto_cuerpo{
+	padding-top: 110px;
+	
+}
+
+.contacto_cuerpo h2{
+	font-size: 40px;
+	font-weight: 300;
+	text-transform: capitalize;
+	background-color: #1F304C;
+	color: #fff;
+	text-align: center;
+	padding-top: 20px;
+}
+.contacto{
+	background-color: #1F304C;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 40px 0 100px;
+	height: 600px;
+}
+
+.contacto img{
+	width: 600px;
+	height: 370px;
+}
+
+.contacto div img{
+	width: 30px;
+	height: 30px;
+}
+
+.contacto_cuerpo form{
+	background-image: url("../img/capa_Edificio.png"),url("../img/edificio.png");
+	background-repeat: no-repeat;
+	line-height: 50px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.contacto_cuerpo form label{
+	color: #fff;
+	font-size: 20px;
+	margin: auto;
+}
+
+.contacto_cuerpo form input{
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 30px;
+	margin: auto;
+}
+
+.contacto_cuerpo form button{
+	width: 100px;
+	height: 30px;
+}
+
+.productos_cuerpo{
+	padding-top: ;
+	padding: 110px 40px 0 100px;
+}
+
+.productos_cuerpo h2{
+	font-size: 40px;
+	font-weight: 300;
+	text-transform: capitalize;
+	background-color: #1F304C;
+	color: #fff;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.productos_cuerpo h3{
+	font-size: 35px;
+	font-weight: 400;
+	margin: 0px 30px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.portatiles div{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.portatiles img{
+	width: 400px;
+	height: 400px;
+}
+
+.portatiles div div{
+	width: 400px;
+}
+.portatiles div{
+	margin: 50px 0px;
+}
+
+.portatiles hr{
+	border-top: 1px solid #E39510;
+	width: 80%;
+}
+
+.descripcion_portatil{
+	display: flex;
+	flex-direction: column;
+}
+.descripcion_portatil h4{
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	border-bottom: 1px solid #E39510;
+}
+
+.descripcion_portatil p{
+	font-size: 12px;
+	font-weight: light;
+	text-align: center;
+}
+
+.precio{
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+	color: #E39510;
+}
+
+

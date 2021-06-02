@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tres en raya con grid</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.contenedor{
+			border:1px solid;
+			display: grid;
+			grid-template-columns: 200px 200px 200px;
+			grid-template-rows: 200px 200px 200px;
+		}
+		.item{
+			border:1px solid;
+		}
+		a{
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Tres en Raya</h1>
+	</header>
+
+	<div class="contenedor">
+		<div class="item" id="item0" onclick="pcelda(0)"></div>
+		<div class="item" id="item1" onclick="pcelda(1)"></div>
+		<div class="item" id="item2" onclick="pcelda(2)"></div>
+		<div class="item" id="item3" onclick="pcelda(3)"></div>
+		<div class="item" id="item4" onclick="pcelda(4)"></div>
+		<div class="item" id="item5" onclick="pcelda(5)"></div>
+		<div class="item" id="item6" onclick="pcelda(6)"></div>
+		<div class="item" id="item7" onclick="pcelda(7)"></div>
+		<div class="item" id="item8" onclick="pcelda(8)"></div>
+	</div>
+
+	<a href="javascript:location.reload()"><button>Reiniciar</button></a>
+
+
+	<script>
+		var mapa = [0,0,0,0,0,0,0,0,0, ];
+		var jugador = 1;
+
+		function dibujar(){
+			for (var i = 0; i < 9; i++) {
+				if(mapa[i] == 0){
+					document.getElementById('item'+i).style="background-color:white";
+				}
+				if(mapa[i] == 1){
+					document.getElementById('item'+i).style="background-color:red";
+				}
+				if(mapa[i] == 2){
+					document.getElementById('item'+i).style="background-color:blue";
+				}
+			}
+		}
+
+		function pcelda(celda){
+			if(mapa[celda] == 0){
+				if(jugador == 1){
+					mapa[celda] = 1;
+					jugador = 2;
+				}else{
+					mapa[celda] = 2;
+					jugador = 1;
+				}
+			}else{
+				alert("No puedes pintar sobre una celda ya coloreada");
+			}
+			
+			dibujar();
+
+			var r = ganador();
+
+			switch(r){
+				case 0:
+					break;
+				case 1:
+					window.alert("Ganó el rojo");
+					break;
+				case 2:
+					window.alert("Ganó el azul");
+					break;
+				case 3:
+					window.alert("Empate");
+					break;
+
+			}
+
+			function ganador(){
+				var num_espacios = 0;
+				for (var i = 0; i < 9; i++){
+					if(mapa[i] == 0) num_espacios++;
+				}
+
+				//horizontales
+				if(mapa[0] == mapa[1] && mapa[1] == mapa[2] && mapa[0] != 0) return mapa[0];
+				if(mapa[3] == mapa[4] && mapa[4] == mapa[5] && mapa[3] != 0) return mapa[3];
+				if(mapa[6] == mapa[7] && mapa[7] == mapa[8] && mapa[6] != 0) return mapa[6];
+
+				//verticales
+				if(mapa[0] == mapa[3] && mapa[3] == mapa[6] && mapa[0] != 0) return mapa[0];
+				if(mapa[1] == mapa[4] && mapa[4] == mapa[7] && mapa[1] != 0) return mapa[1];
+				if(mapa[2] == mapa[5] && mapa[5] == mapa[8] && mapa[2] != 0) return mapa[2];
+
+				//diagonales
+				if(mapa[0] == mapa[4] && mapa[4] == mapa[8] && mapa[0] != 0) return mapa[0];
+				if(mapa[2] == mapa[4] && mapa[4] == mapa[6] && mapa[2] != 0) return mapa[2];
+
+				if(num_espacios > 0){
+					return 0;
+				}else{
+					return 3;
+				}
+				
+			}
+		}
+	</script>
+</body>
+</html>

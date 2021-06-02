@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/pokemon.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="contenedor">
+		<nav>
+			<img src="img/char.png"><a onclick="inicio(0);">charizard</a>
+			<img src="img/lax.png"><a onclick="inicio(1);">snorlax</a>
+			<img src="img/two.png"><a onclick="inicio(2);">mewtwo</a>
+			<img src="img/um.png"><a onclick="inicio(3);">umbreen</a>
+		</nav>
+		<div id="imagenPokemon">
+		<img src="img/fondo.jpeg" alt="">
+	</div>
+		<div id="datosPokemon">
+			<h1>Nombre del Pokemón</h1>
+			<p><span>-Nombre del Pokemón-</span> es un pokemón de tipo <span>-X-</span><br>Tiene un ataque de <span>-tanto-</span>, una vida de <span>-tanto-</span></p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		function Pokemon(n,v,a,t,i){
+			this.nombre = n;
+			this.vida= v;
+			this.ataque = a;
+			this.tipo = t;
+			this.imagen = i;
+		}
+
+		var charizard= new Pokemon("charizard",100,60,"nose","<img src='img/char.png'>");
+		var snorlax= new Pokemon("snorlax",90,60,"nose","<img src='img/lax.png'>");
+		var mewtwo= new Pokemon("mewtwo",80,60,"nose","<img src='img/two.png'>");
+		var umbreen= new Pokemon("umbreen",100,60,"nose","<img src='img/um.png'>");
+
+		var opciones = [charizard,snorlax,mewtwo,umbreen];
+
+		function inicio(eleccion){
+			var pokemonElegido = opciones[eleccion];
+			document.getElementById('imagenPokemon').innerHTML = pokemonElegido.imagen;
+			document.getElementById('datosPokemon').innerHTML = "<h1>"+pokemonElegido.nombre+"</h1>"+"<p>"+pokemonElegido.nombre+" es un pokemón de tipo"+pokemonElegido.tipo+"<br>Tiene un ataque de "+pokemonElegido.ataque+"y una vida de "+pokemonElegido.vida+"<p>";
+		}
+	</script>
+</body>
+</html>

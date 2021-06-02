@@ -1,0 +1,74 @@
+body{
+	background: #fff; 
+}
+
+#contenedor{
+	width: 900px;
+	margin:50px 0 0 200px;
+	font-family: "Arial Black";
+}
+
+#contenedor img{
+	width: 70%;
+	display: block;
+	border-right: 2px grey dashed;
+	padding: 40px;
+}
+
+div{
+	float: left;
+	width: 50%;
+}
+
+h1{
+	font-size: 40px;
+	color: darkblue;
+}
+
+p{
+	color: brown;
+}
+
+nav{
+	margin-bottom: 100px;
+}
+
+a{
+	padding:20px;
+	background-color: coral;
+	cursor: pointer;
+	border-bottom: 5px solid #000;
+	margin:-22px;
+}
+
+a:hover{
+	background: violet;
+}
+
+nav img{
+	width: 5% !important;
+	display: inline !important;
+	border-right: none !important;
+	padding: 0 !important;
+	position: relative;
+	bottom: 20px;
+	left: 30px;
+}
+
+span{
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

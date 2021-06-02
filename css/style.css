@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: "Silka";
+	src: url("../Fonts/silka-regularitalic-webfont.ttf");
+}
+body{
+	height: 100vh;
+	width: 900px;
+	background-color: #E0F7F7;
+	font-family: "Silka";
+	color: #333;
+}
+header{
+	margin-top: 30px;
+}
+.icono{
+	margin-left: 20px;
+
+    display: block;
+    z-index: 100000000;
+    animation: moverIzquierda 1s ease-in;
+}
+header  a{
+	color: #333;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+.desaparecer{
+	display: none;
+}
+.aparecer{
+	display: block;
+}
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #000;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+    background: #3b3434;
+    font-size: 32px;
+}
+.enlaces a{
+	color: #fff;
+}
+.uno {
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+.dos {
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+
+.dos a:hover {
+    color:  #947A78;
+    transform: scale(1.25);
+}
+
+.contenedor{
+	height: 70%;
+	 animation: moverDerecha 1s ease-in;
+}
+.intro{
+	margin-top: 100px;
+	display: flex;
+	justify-content: left;
+	position: relative;
+	height: 800px;
+	width: 100%;
+}
+.color{
+	height: 60%;
+	width: 85%;
+	background-color: #947A78;
+}
+.imgYo{
+	width: 90%;
+	height: 100%;
+    animation: moverIzquierda 1s ease-in;
+}
+.Titulo{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	align-content: left;
+	position: absolute;
+	right: calc(50% - 650px);
+}
+h1{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 400;
+	font-size: 6em;
+	height: 100px;
+}
+p{
+	font-weight: bolder;
+	font-size: 2em;
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	bottom: calc(50% - 380px);
+	left: 60%;
+}
+footer{
+	padding-top: 20px;
+	height: 100px;
+	width: 400px;
+	padding-left: 100%;
+	animation: arriba 1s ease-in;
+}
+footer ul {
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+	height: 100%;
+}
+footer ul li{
+	list-style: none;
+	padding-right: 30px;
+	height: 100%;
+}
+footer ul li a{
+	height: 100%;
+	width: 100%;
+}
+.iconoo{
+	width: 50px;
+	height: 50px;
+}
+
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@media screen and (max-width: 800px){
+	.intro,.Titulo{
+		display: block;
+	}
+	.Titulo{
+		right:calc(50% - 50px);
+		position: fixed;
+	}
+
+	.contenedor p{
+		position: fixed;
+		text-align: center;
+		font-size: 1.5em;
+		width: 200px;
+	}
+	footer{
+		padding-left: 10%;
+	}
+}
+@media screen and (max-width: 450px){
+	body{
+		width: 100%;
+		height: 400px;
+	}
+	.contenedor{
+		height: 200px;
+	}
+	.intro{
+		height: 50%;
+	}
+	.color{
+		width: 390px;
+	}
+
+	.Titulo{
+		display: flex;
+		right: 0;
+		left: 10%;
+		flex-direction: row;
+	}
+
+	.Titulo h1{
+		font-size: 1em;
+		height: auto;
+		right: 0;
+		
+	}
+
+	.contenedor p{
+		bottom: 0;
+		font-size: 0.6em;
+		width: 300px;
+		text-align: left;
+		height: auto;
+		position: absolute;
+		left: 10%;
+	}
+
+	.enlaces{
+		font-size: 1em;
+	}
+}
